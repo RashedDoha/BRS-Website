@@ -203,9 +203,9 @@ header nav li:last-child{
 
 
 .heroContent {
-	right: -1000px;
 	text-align: right;
 	width: 33%;
+	visibility: hidden;
 	max-height: 70%;
 }
 

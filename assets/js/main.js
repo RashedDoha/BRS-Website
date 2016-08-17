@@ -8,5 +8,7 @@ window.onload = function() {
         transformOrigin: "20px 264px"
     });
 
+    new WOW().init();
+
 
 }
