@@ -1,1 +1,380 @@
+/*-------------
+ * 	General
+ *-------------
+
 $navy: #00506D
+$brown: #414a4f
+$white: #fff
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font: normal 16px sans-serif
+  color: #555
+
+ul, nav
+  list-style: none
+
+a
+  text-decoration: none
+  color: inherit
+  cursor: pointer
+  opacity: 0.9
+  &:hover
+    opacity: 1
+  &.btn
+    color: $white
+    border-radius: 4px
+    text-transform: uppercase
+    background-color: $navy
+    font-weight: 800
+    text-align: center
+
+hr
+  width: 150px
+  height: 2px
+  background-color: $navy
+  border: 0
+  margin-bottom: 80px
+
+section
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 125px 100px
+
+.visible-xs
+  display: none
+
+.hidden-xs
+  display: inherit
+
+@media (max-width: 1000px)
+  section
+    padding: 100px 50px
+
+@media (max-width: 650px)
+  .visible-xs
+    display: inherit
+  .hidden-xs
+    display: none
+
+@media (max-width: 600px)
+  section
+    padding: 80px 30px
+
+section
+  h3.title
+    color: #414a4f
+    text-transform: capitalize
+    font: bold 32px 'Open Sans', sans-serif
+    margin-bottom: 35px
+    /*text-align: center;
+  p
+    max-width: 800px
+    text-align: center
+    margin-bottom: 35px
+    padding: 0 20px
+    line-height: 2
+
+ul.grid
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+/*-------------
+ * 	Header
+ *-------------
+
+header
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: $white
+  padding: 10px 100px 0
+  h2
+    font-family: 'Quicksand', sans-serif
+  nav
+    display: flex
+    li
+      margin: 0 15px
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+
+@media (max-width: 1000px)
+  header
+    padding: 20px 50px
+
+@media (max-width: 800px)
+  header
+    flex-direction: column
+    a
+      margin-bottom: 10px
+    h2
+      margin-bottom: 15px
+
+/*----------------
+ * 	Hero Section
+ *----------------
+
+.hero
+  position: relative
+  flex-direction: row
+  justify-content: flex-end
+  height: 100vh
+  color: $white
+  padding: 125px 150px
+  .background-image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-size: cover
+    z-index: -1
+
+.heroContent
+  right: -1000px
+  text-align: right
+  width: 33%
+  max-height: 70%
+
+h2.title
+  text-decoration: underline
+  font-size: 40px
+  font-family: 'Oswald', sans-serif
+
+p.tagline
+  padding: 0
+  text-align: right
+  font-family: 'Oxygen', sans-serif
+  font-size: 20px
+
+
+svg#roboarm
+  position: absolute
+  bottom: 0px
+  left: 0px
+  height: 50%
+  width: auto
+  z-index: 2
+
+.hero
+  h1
+    font: bold 60px 'Open Sans', sans-serif
+    margin-bottom: 15px
+  h3
+    font: normal 28px 'Open Sans', sans-serif
+    margin-bottom: 40px
+  a.btn
+    padding: 20px 46px
+
+img#roboarm
+  position: absolute
+  bottom: 0px
+  left: 0px
+
+@media (max-width: 1092px)
+  .hero
+    padding-right: 50px
+  .heroContent h2
+    font-size: 35px
+  p.tagline
+    font-size: 1em
+
+@media (max-width: 800px)
+  .hero
+    min-height: 600px
+    h1
+      font-size: 48px
+    h3
+      font-size: 24px
+    a.btn
+      padding: 15px 40px
+  h2.title
+    font-size: 30px
+  p.tagline
+    font-size: 0.9em
+  svg#roboarm
+    height: 40%
+
+@media (max-width: 650px)
+  .hero
+    justify-content: space-between
+  p.tagline
+    font-size: 1em
+    text-align: left
+
+/*--------------------
+ * 	Our Work Section
+ *---------------------
+
+.оur-work
+  background-color: #fff
+
+.our-work .grid li
+  padding: 20px
+  height: 350px
+  border-radius: 3px
+  background-clip: content-box
+  background-size: cover
+  background-position: center
+  background-color: #333
+  &.small
+    flex-basis: 40%
+  &.large
+    flex-basis: 60%
+
+@media (max-width: 1000px)
+  .our-work .grid li
+    &.small, &.large
+      flex-basis: 100%
+
+/*----------------------
+ * 	Features Section
+ *----------------------
+
+.features
+  background-color: #f7f7f7
+  .grid li
+    padding: 0 30px
+    flex-basis: 33%
+    text-align: center
+    i
+      font-size: 50px
+      color: $navy
+      margin-bottom: 25px
+    h4
+      color: #555
+      font-size: 20px
+      margin-bottom: 25px
+    p
+      margin: 0
+
+@media (max-width: 1000px)
+  .features .grid li
+    flex-basis: 70%
+    margin-bottom: 65px
+    &:last-child
+      margin-bottom: 0
+
+@media (max-width: 600px)
+  .features .grid li
+    flex-basis: 100%
+
+/*--------------------
+ * 	Reviews Section
+ *--------------------
+
+.reviews
+  background-color: $white
+  .quote
+    text-align: center
+    width: 80%
+    font-size: 22px
+    font-weight: 300
+    line-height: 1.5
+    margin-bottom: 20px
+    padding: 0
+  .author
+    font-size: 18px
+    margin-bottom: 50px
+    &:last-child
+      margin-bottom: 0
+
+@media (max-width: 1000px)
+  .reviews
+    .quote
+      font-size: 20px
+    .author
+      font-size: 16px
+
+/*---------------------
+ * 	Contact Section
+ *---------------------
+
+.contact
+  background-color: #f7f7f7
+  form
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    max-width: 800px
+    width: 80%
+    input
+      padding: 15px
+      flex: 1
+      margin-right: 30px
+      font-size: 18px
+      color: #555
+    .btn
+      padding: 18px 42px
+
+@media (max-width: 800px)
+  .contact form input
+    flex-basis: 100%
+    margin: 0 0 20px 0
+
+/*-------------
+ * 	Footer
+ *-------------
+
+footer
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  color: #fff
+  background-color: $navy
+  padding: 60px 0
+  ul
+    display: flex
+    margin-bottom: 25px
+    font-size: 32px
+    li
+      margin: 0 8px
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+  p
+    text-transform: uppercase
+    font-size: 14px
+    color: rgba(255, 255, 255, 0.6)
+    margin-bottom: 10px
+    a
+      color: $white
+
+@media (max-width: 700px)
+  footer
+    padding: 80px 15px
+
+/* -- Demo ads --
+
+@media (max-width: 1200px)
+  #bsaHolder
+    display: none
+
+/* Animation classes
+
+.animate
+  animation: moveBase 4s ease-out 1 forwards
+
+@keyframes moveBase
+  0%
+    left: 0%
+
+  100%
+    left: 35%
