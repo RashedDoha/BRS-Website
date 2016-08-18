@@ -33,7 +33,7 @@ a.btn{
 	color: #fff;
 	border-radius: 4px;
 	text-transform: uppercase;
-	background-color: #2196F3;
+	background-color: #00506D;
 	font-weight: 800;
 	text-align: center;
 }
@@ -41,7 +41,7 @@ a.btn{
 hr{
 	width: 150px;
 	height: 2px;
-	background-color: #2196F3;
+	background-color: #00506D;
 	border: 0;
 	margin-bottom: 80px;
 }
@@ -381,7 +381,7 @@ img#roboarm {
 
 .features .grid li i{
     font-size: 50px;
-    color: #2196F3;
+    color: #00506D;
     margin-bottom: 25px;
 }
 
@@ -513,7 +513,7 @@ footer{
 	align-items: center;
 	text-align: center;
 	color: #fff;
-	background-color: #414a4f;
+	background-color: #00506D;
 	padding: 60px 0;
 }
 
