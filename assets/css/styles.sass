@@ -19,13 +19,13 @@ header
   left: 0
   z-index: 10
   width: 100%
-  display: flex
-  justify-content: space-between
+  @include display(flex)
+  @include justify-content(space-between)
   align-items: center
   color: $white
   padding: 10px 100px 0
   h2
-    font-family: 'Quicksand', sans-serif
+    font-family: $quicksand
   nav
     display: flex
     li
@@ -41,7 +41,7 @@ header
 
 @media (max-width: 800px)
   header
-    flex-direction: column
+    @include flex-direction(column)
     a
       margin-bottom: 10px
     h2
@@ -53,8 +53,8 @@ header
 
 .hero
   position: relative
-  flex-direction: row
-  justify-content: flex-end
+  @include flex-direction(row)
+  @include justify-content(flex-end)
   height: 100vh
   color: $white
   padding: 125px 150px
@@ -76,12 +76,12 @@ header
 h2.title
   text-decoration: underline
   font-size: 40px
-  font-family: 'Oswald', sans-serif
+  font-family: $oswald
 
 p.tagline
   padding: 0
   text-align: right
-  font-family: 'Oxygen', sans-serif
+  font-family: $oxygen
   font-size: 20px
 
 
@@ -134,7 +134,7 @@ img#roboarm
 
 @media (max-width: 650px)
   .hero
-    justify-content: space-between
+    @include justify-content(space-between)
   p.tagline
     font-size: 1em
     text-align: left
