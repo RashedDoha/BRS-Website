@@ -1,90 +1,13 @@
+
+
 /*-------------
- * 	General
+ * 	Imports
  *-------------
 
-$navy: #00506D
-$brown: #414a4f
-$white: #fff
-
-*
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-
-html
-  font: normal 16px sans-serif
-  color: #555
-
-ul, nav
-  list-style: none
-
-a
-  text-decoration: none
-  color: inherit
-  cursor: pointer
-  opacity: 0.9
-  &:hover
-    opacity: 1
-  &.btn
-    color: $white
-    border-radius: 4px
-    text-transform: uppercase
-    background-color: $navy
-    font-weight: 800
-    text-align: center
-
-hr
-  width: 150px
-  height: 2px
-  background-color: $navy
-  border: 0
-  margin-bottom: 80px
-
-section
-  display: flex
-  flex-direction: column
-  align-items: center
-  padding: 125px 100px
-
-.visible-xs
-  display: none
-
-.hidden-xs
-  display: inherit
-
-@media (max-width: 1000px)
-  section
-    padding: 100px 50px
-
-@media (max-width: 650px)
-  .visible-xs
-    display: inherit
-  .hidden-xs
-    display: none
-
-@media (max-width: 600px)
-  section
-    padding: 80px 30px
-
-section
-  h3.title
-    color: #414a4f
-    text-transform: capitalize
-    font: bold 32px 'Open Sans', sans-serif
-    margin-bottom: 35px
-    /*text-align: center;
-  p
-    max-width: 800px
-    text-align: center
-    margin-bottom: 35px
-    padding: 0 20px
-    line-height: 2
-
-ul.grid
-  width: 100%
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
+@import 0-plugins/plugins-dir
+@import 1-base/base-dir
+@import 2-modules/modules-dir
+@import 3-layouts/layouts-dir
 
 /*-------------
  * 	Header
