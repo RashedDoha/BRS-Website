@@ -41,7 +41,7 @@ a.btn{
 hr{
 	width: 150px;
 	height: 2px;
-	background-color: #2196F3;
+	background-color: #00506D;
 	border: 0;
 	margin-bottom: 80px;
 }
@@ -205,7 +205,6 @@ header nav li:last-child{
 .heroContent {
 	text-align: right;
 	width: 33%;
-	visibility: hidden;
 	max-height: 70%;
 }
 
@@ -223,6 +222,10 @@ p.tagline {
 
 }
 
+#arrow {
+	visibility: hidden;
+	margin-bottom: 30px;
+}
 /*.hero .background-image:after{
 	content: '';
 	position: absolute;
@@ -567,6 +570,7 @@ footer p a{
 .animate {
 	animation: moveBase 4s ease-out 1 forwards;
 }
+
 
 @keyframes moveBase {
 	0% {
