@@ -19,8 +19,8 @@ header
   left: 0
   z-index: 10
   width: 100%
-  @include display(flex)
-  @include justify-content(space-between)
+  +display(flex)
+  +justify-content(space-between)
   align-items: center
   color: $white
   padding: 10px 100px 0
@@ -41,7 +41,7 @@ header
 
 @media (max-width: 800px)
   header
-    @include flex-direction(column)
+    +flex-direction(column)
     a
       margin-bottom: 10px
     h2
@@ -53,8 +53,8 @@ header
 
 .hero
   position: relative
-  @include flex-direction(row)
-  @include justify-content(flex-end)
+  +flex-direction(row)
+  +justify-content(flex-end)
   height: 100vh
   color: $white
   padding: 125px 150px
@@ -134,7 +134,7 @@ img#roboarm
 
 @media (max-width: 650px)
   .hero
-    @include justify-content(space-between)
+    +justify-content(space-between)
   p.tagline
     font-size: 1em
     text-align: left
@@ -143,21 +143,28 @@ img#roboarm
  * 	Our Work Section
  *---------------------
 
-.оur-work
-  background-color: #fff
+.our-work
+  position: relative
+  color: $white
+  h3.title
+    color: $white
 
 .our-work .grid li
-  padding: 20px
+  padding: 10px
   height: 350px
   border-radius: 3px
   background-clip: content-box
   background-size: cover
-  background-position: center
+  background-repeat: no-repeat
+  background-position: top
   background-color: #333
   &.small
     flex-basis: 40%
   &.large
     flex-basis: 60%
+
+#BB8
+  +position(absolute, null null -13px 0)
 
 @media (max-width: 1000px)
   .our-work .grid li
@@ -183,7 +190,7 @@ img#roboarm
       font-size: 20px
       margin-bottom: 25px
     p
-      margin: 0
+      margin: 1
 
 @media (max-width: 1000px)
   .features .grid li

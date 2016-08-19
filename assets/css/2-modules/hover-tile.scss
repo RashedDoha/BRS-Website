@@ -37,7 +37,7 @@
   }
 
   .hover-tile-hidden {
-    background: transparentize($navy, 0.5);
+    background: transparentize($brown, 0.5);
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);
@@ -47,7 +47,7 @@
       text-align: left;
     }
 
-    h3 {
+    h2 {
       margin: 0 0 0.5em 0;
     }
   }
