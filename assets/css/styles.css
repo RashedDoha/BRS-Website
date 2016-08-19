@@ -540,24 +540,86 @@ ul.grid {
     .hover-tile-outer .hover-tile-hidden h2 {
       margin: 0 0 0.5em 0; }
 
+.modal-content img {
+  height: 30%;
+  width: auto;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  bottom: 50%; }
+
+.register-button {
+  background-color: #00506D;
+  border-color: #e6eef0; }
+  .register-button:hover, .register-button:active {
+    background-color: #003649;
+    border-color: #e6eef0; }
+
+.form-group {
+  padding: 10px 30px 10px 0; }
+
 /*--------------------
  * 	Reviews Section
  *-------------------- */
 .reviews {
   background-color: #fff; }
-  .reviews .quote {
-    text-align: center;
-    width: 80%;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.5;
+  .reviews h2 {
     margin-bottom: 20px;
-    padding: 0; }
-  .reviews .author {
-    font-size: 18px;
-    margin-bottom: 50px; }
-    .reviews .author:last-child {
-      margin-bottom: 0; }
+    font-family: "Oxygen", sans-serif;
+    font-style: italic;
+    font-weight: normal; }
+  .reviews .committee {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+    .reviews .committee .member-image {
+      flex-basis: 30%; }
+      .reviews .committee .member-image .headshot {
+        height: 150px;
+        width: 150px;
+        margin: auto;
+        background-size: cover;
+        background-position: top;
+        border-radius: 75px; }
+    .reviews .committee .member-quote {
+      flex-basis: 70%; }
+      .reviews .committee .member-quote .quote {
+        text-align: right;
+        width: 80%;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        padding: 0; }
+      .reviews .committee .member-quote .author {
+        font-size: 18px;
+        margin-bottom: 50px; }
+        .reviews .committee .member-quote .author:last-child {
+          margin-bottom: 0; }
 
 @media (max-width: 1000px) {
   .reviews .quote {

@@ -4,19 +4,41 @@
 
 .reviews
   background-color: $white
-  .quote
-    text-align: center
-    width: 80%
-    font-size: 22px
-    font-weight: 300
-    line-height: 1.5
-    margin-bottom: 20px
-    padding: 0
-  .author
-    font-size: 18px
-    margin-bottom: 50px
-    &:last-child
-      margin-bottom: 0
+  h2
+    +margin(null null 20px null)
+    font-family: $oxygen
+    font-style: italic
+    font-weight: normal
+  .committee
+    +margin(null null 30px null)
+    +display(flex)
+    +flex-direction(row)
+    +justify-content(center)
+    .member-image
+      flex-basis: 30%
+      .headshot
+        height: 150px
+        width: 150px
+        margin: auto
+        background-size: cover
+        background-position: top
+        border-radius: 75px
+    .member-quote
+      flex-basis: 70%
+      .quote
+        text-align: right
+        width: 80%
+        font-size: 22px
+        font-weight: 300
+        line-height: 1.5
+        margin-bottom: 20px
+        padding: 0
+      .author
+        font-size: 18px
+        margin-bottom: 50px
+        &:last-child
+          margin-bottom: 0
+
 
 @media (max-width: 1000px)
   .reviews

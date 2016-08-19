@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Landing Page Template With Flexbox</title>
+    <title>BUET Robotics Society</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Oxygen" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
 
@@ -71,8 +70,8 @@
         <rect x="41.376" y="357.729" fill="#C7CB35" width="5.133" height="5.117"/>
         <rect x="32.716" y="366.045" fill="#C7CB35" width="5.132" height="5.115"/>
         <g id="arm">
-        	<a href="#"><g>
-        		<polygon id="signUpBoard" fill="#414042" stroke="#FFFFFF" stroke-width="0.8304" stroke-miterlimit="10" points="319.903,150.009 87.653,202.316
+        	<a href="#" data-toggle="modal" data-target="#myModal"><g>
+        		<polygon fill="#414042" stroke="#FFFFFF" stroke-width="0.8304" stroke-miterlimit="10" points="319.903,150.009 87.653,202.316
         			53.88,53.31 286.134,1 		"/>
         		<polygon fill="#414042" stroke="#FFFFFF" stroke-width="0.8023" stroke-miterlimit="10" points="316.259,147.648 90.283,198.543
         			57.885,55.595 283.858,4.696 		"/>
@@ -180,11 +179,6 @@
         <rect x="6.468" y="279.76" fill="#3A9EA2" width="43.838" height="8.635"/>
     </svg>
 
-
-        <map name="Map" id="Map">
-            <area alt="" title="" href="#" shape="poly" coords="60,55,283,3,314,147,88,200" />
-            <!-- <area alt="" title="" href="#" shape="poly" coords="107,65,342,75,339,230,103,220" /> -->
-        </map>
 	</section>
 
 
@@ -262,15 +256,34 @@
 
 	<section class="reviews">
 		<h3 class="title">Still  not Convinced?</h3>
+        <h2>Hear it from the members...</h2>
+        <div class="committee">
+            <div class="member-image">
+                <div class="headshot" style="background-image: url('assets/img/trump.jpg')">
 
-		<p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-		<p class="author">— Patrick Farrell</p>
+                </div>
+            </div>
 
-		<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-		<p class="author">— George Smith</p>
+            <div class="member-quote">
+                <p class="quote">I'm telling you I'm gonna build a great robot. A Trump robot.
+                And ban all the muslim robots from BRS. Trust me. I'll make BRS great again.</p>
+        		<p class="author">— Donald Trump</p>
+            </div>
+        </div>
 
-		<p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi pulvinar ornare. Integer eu iaculis metus.</p>
-		<p class="author">— Kevin Blake</p>
+        <div class="committee">
+
+            <div class="member-quote">
+                <p class="quote">Ay um luken por robot por may apkaming akshan mobi da espi. BRS help me mek akshan robot to bit mai potidondi tom kuz</p>
+        		<p class="author">— Ananta Jalil</p>
+            </div>
+            <div class="member-image">
+                <div class="headshot" style="background-image: url('assets/img/jalil.jpg'); margin: 0">
+
+                </div>
+            </div>
+        </div>
+
 
 
 	</section>
@@ -315,7 +328,82 @@
 
       <p>All rights reserved by BUET Robotics Society (BRS) &reg;</p>
     </footer>
+
+    <!-- MODAL
+		========================================== -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;<span class="sr-only">Close</span></span></button>
+                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-user"></i> Submit your details to BRS HQ</h4>
+                </div>
+                <!-- modal header -->
+
+                <div class="modal-body">
+                    <p>Simply enter your information! We will get back to you shortly!</p>
+
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-name">
+                            Your Name
+                        </label>
+                            <input type="text" class="form-control" id="subscribe-name" placeholder="Your Name">
+                        </div>
+                        <!-- form-group-->
+
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-email">
+                            Your Student ID
+                        </label>
+                            <input type="text" class="form-control" id="subscribe-email" placeholder="Your Student ID">
+                        </div>
+                        <!-- form-group-->
+                    </form>
+
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-name">
+                            Your Department
+                        </label>
+                            <input type="text" class="form-control" id="subscribe-name" placeholder="Your Department">
+                        </div>
+                        <!-- form-group-->
+
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-email">
+                            Your Phone Number
+                        </label>
+                            <input type="text" class="form-control" id="subscribe-email" placeholder="Your Phone Number">
+                        </div>
+                        <!-- form-group-->
+
+
+                    </form>
+
+                    <input type="submit" class="register-button btn btn-danger" value="Subscribe!">
+
+                    <hr>
+
+                    <p><small>All BRS memberships are subject to a one-time &amp; non-refundable fee <br>All rights reserved by Buet Robotics Society &reg; &amp; BUET </small></p>
+
+                </div>
+
+
+
+                <!-- modal-body -->
+                <img src="assets/img/logo-icon.png" alt="BRS logo" />
+            </div>
+            <!-- modal content-->
+        </div>
+        <!-- modal dialog -->
+
+    </div>
+    <!-- modal -->
+
 <script src="assets/js/tweenmax.min.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
 
