@@ -806,18 +806,10 @@ h2.title {
   font-family: "Oswald", sans-serif; }
 
 p.tagline {
-	padding: 0;
-	text-align: right;
-	font-family: 'Oxygen', sans-serif;
-	font-size: 20px;
-
-}
-
-#arrow {
-	visibility: hidden;
-	margin-bottom: 30px;
-}
-
+  padding: 0;
+  text-align: right;
+  font-family: "Oxygen", sans-serif;
+  font-size: 20px; }
 
 svg#roboarm {
   position: absolute;
