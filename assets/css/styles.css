@@ -548,13 +548,6 @@ ul.grid {
   right: 5%;
   bottom: 50%; }
 
-.register-button {
-  background-color: #00506D;
-  border-color: #e6eef0; }
-  .register-button:hover, .register-button:active {
-    background-color: #003649;
-    border-color: #e6eef0; }
-
 .form-group {
   padding: 10px 30px 10px 0; }
 
