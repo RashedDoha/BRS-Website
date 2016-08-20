@@ -10,3 +10,17 @@ window.onload = function() {
 
 
 }
+
+$(function() {
+  $("#modal-trigger").click(function() {
+      $("body").addClass("modal-open");
+  });
+
+  $(".modal-fade-screen, .modal-close").on("click", function() {
+    $("body").removeClass("modal-open");
+  });
+
+  $(".modal-inner").on("click", function(e) {
+    e.stopPropagation();
+  });
+});
