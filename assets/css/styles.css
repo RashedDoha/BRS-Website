@@ -750,7 +750,9 @@ header {
     header a {
       margin-bottom: 10px; }
     header h2 {
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+    header img {
+      width: 95%; } }
 /*----------------
  * 	Hero Section
  *---------------- */
