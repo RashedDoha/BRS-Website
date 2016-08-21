@@ -388,7 +388,8 @@ textarea {
   box-sizing: border-box; }
 
 body {
-  background: url("../img/robots/robots.png") repeat fixed; }
+  background: url("../img/robots/robots.png") repeat fixed;
+  overflow-x: hidden; }
 
 html {
   font: normal 16px sans-serif;
@@ -900,8 +901,9 @@ img#roboarm {
 
 #BB8 {
   position: absolute;
-  bottom: -13px;
-  left: 0; }
+  bottom: -3px;
+  left: 0;
+  z-index: 2; }
 
 @media (max-width: 1000px) {
   .our-work .grid li.small, .our-work .grid li.large {
