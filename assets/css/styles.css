@@ -393,7 +393,8 @@ body {
 
 html {
   font: normal 16px sans-serif;
-  color: #555; }
+  color: #555;
+  overflow-x: hidden; }
 
 ul, nav {
   list-style: none; }
@@ -541,6 +542,9 @@ ul.grid {
     .hover-tile-outer .hover-tile-hidden h2 {
       margin: 0 0 0.5em 0; }
 
+@media (max-width: 400px) {
+  .hover-tile-hidden p {
+    font-size: 0.9em; } }
 .modal-content img {
   height: 30%;
   width: auto;
@@ -754,6 +758,10 @@ header {
       margin-bottom: 15px; }
     header img {
       width: 95%; } }
+@media (max-width: 400px) {
+  nav li {
+    font-size: 0.8em;
+    margin: 5px 5px; } }
 /*----------------
  * 	Hero Section
  *---------------- */
@@ -778,6 +786,7 @@ header {
   -o-justify-content: flex-start;
   justify-content: flex-start;
   -ms-flex-pack: start;
+  overflow-x: hidden !important;
   height: 100vh;
   color: #fff;
   padding: 125px 150px; }
