@@ -1,0 +1,247 @@
+html, body, .main {
+  height: 100%;
+  margin: 0;
+  font-family: 'Oswald', sans-serif; }
+
+.image-block {
+  position: relative;
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-top: 1px;
+  overflow: hidden;
+  z-index: 2;
+  /*margin-bottom: 10px;*/ }
+
+/*.div1{
+	//background: url(assets/img/real.png) fixed;
+	background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}*/
+
+#wrapper {
+    background: url('../../assets/img/carnival.jpg');
+    background-size: contain;
+
+}
+.div2 {
+  background: url('../../assets/img/industrial.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 100; }
+
+.div3 {
+  background: url('../../assets/img/rescue.jpg');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 100; }
+
+.div4 {
+  background: url('../../assets/img/race.jpg');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 100; }
+
+.margin-auto {
+  margin: auto;
+  width: 50%; }
+
+.threeD {
+  /*font-family: 'Nova Flat', cursive;*/
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  font-size: 4em; }
+
+.round-box {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(123, 18, 35, 0.9);
+  border-radius: 75px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  height: 150px; }
+  .round-box h1 {
+    display: table-cell;
+    vertical-align: middle;
+    height: 150px;
+    margin: 0; }
+
+.bottom {
+  bottom: 15px; }
+
+.right {
+  right: -75px;
+  padding-left: 30px;
+  animation-name: slideBarLeft;
+  animation-duration: 3s;
+  -webkit-animation-name: slideBarLeft;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;
+  /* Safari 4.0 - 8.0 */ }
+  .right h1 {
+    padding-right: 90px; }
+
+.top {
+  top: 60px; }
+
+.left {
+  left: -75px;
+  padding-right: 30px;
+  -webkit-animation-name: slideBarRight;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: slideBarRight;
+  animation-duration: 3s; }
+  .left h1 {
+    padding-left: 90px; }
+
+#title {
+  font-family: 'Nova Flat', cursive; }
+
+.floating-text {
+  font-family: 'Oswald', sans-serif;
+  /*font-family: 'Federant', cursive;*/
+  font-size: 125%;
+  position: absolute;
+  text-align: center;
+  font-size: 2em;
+  background-color: rgba(14, 81, 110, 0.75);
+  border-radius: 10px;
+  width: 450px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-shadow: 3px 3px #000000;
+  z-index: 200; }
+  .floating-text h2 {
+    padding: 0px; }
+  .floating-text a {
+      color: #920040;
+      text-shadow: none;
+      text-shadow: 2px 2px #000000;
+  }
+
+.floating-text-div1 {
+  right: 0px;
+  top: 110px;
+  animation-name: slideLeft;
+  animation-duration: 5s;
+  -webkit-animation-name: slideLeft;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s;
+  /* Safari 4.0 - 8.0 */
+  z-index: 200; }
+
+.floating-text-div2 {
+  left: 0px;
+  bottom: 100px;
+  animation-name: slideRight;
+  animation-duration: 5s;
+  -webkit-animation-name: slideRight;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s;
+  /* Safari 4.0 - 8.0 */ }
+
+.floating-text-div3 {
+  bottom: 20px;
+  left: 0px;
+  animation-name: slideRight;
+  animation-duration: 5s;
+  -webkit-animation-name: slideRight;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s;
+  /* Safari 4.0 - 8.0 */ }
+
+.floating-text-div4 {
+  top: 60px;
+  right: 0px;
+  animation-name: slideLeft;
+  animation-duration: 5s;
+  -webkit-animation-name: slideLeft;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s;
+  /* Safari 4.0 - 8.0 */ }
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0e516e;
+  opacity: 0.8;
+  }
+  header ul:hover {
+      opacity: 1;
+  }
+  header ul li {
+    float: right; }
+    header ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; }
+  header ul a:hover:not(.active) {
+    background-color: #063d5a;}
+  header ul a:hover {
+      color: white;
+      text-decoration: none;
+  }
+  header ul .active {
+    background-color: #920040; }
+
+.navigation {
+  width: 100%;
+  position: fixed;
+  z-index: 9999; }
+
+.brs-logo {
+  margin-top: 50px; }
+
+
+
+@media (max-width: 768px) {
+  .floating-text {
+    width: 100%;
+    top: auto;
+    bottom: 0px;
+    padding: 15px; }
+
+  .round-box {
+    font-size: 70%;
+    width: 70%; }
+
+  .bottom {
+    top: 60px; } }
+@keyframes slideLeft {
+  0% {
+    right: -450px; }
+  100% {
+    right: 0px; } }
+@keyframes slideRight {
+  0% {
+    left: -450px; }
+  100% {
+    left: 0px; } }
+@keyframes slideBarLeft {
+  0% {
+    right: -550px; }
+  100% {
+    right: -75px; } }
+@keyframes slideBarRight {
+  0% {
+    left: -550px; }
+  100% {
+    left: -75px; } }
+#wrapper {
+  z-index: -99; }
+
+/*# sourceMappingURL=styles.css.map */
